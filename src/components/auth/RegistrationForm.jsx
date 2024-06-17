@@ -21,7 +21,7 @@ const RegistrationForm = () => {
         <input type="password" name="password" id="password" />
       </div>
 
-      <button type="submit" className="btn-primary w-full mt-4">
+      <button type="submit" className="btn-primary w-full mt-4 bg-primary">
         Create account
       </button>
     </form>

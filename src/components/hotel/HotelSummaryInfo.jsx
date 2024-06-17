@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HotelSummaryInfo = ({fromListPage}) => {
   return (
     <>
@@ -17,7 +19,7 @@ const HotelSummaryInfo = ({fromListPage}) => {
         <h2 className="text-2xl font-bold text-right">$124/night</h2>
         <p className=" text-right">Per Night for 4 Rooms</p>
         {
-          fromListPage ? (<button className="btn-primary ">Details</button>) : (<button className="btn-primary ">Book</button>)
+          fromListPage ? (<Link href="/hotel/1" className="btn-primary bg-primary">Details</Link>) : (<Link className="btn-primary ">Book</Link>)
         }
       </div>
     </>
