@@ -1,7 +1,7 @@
 const Search = ({fromList}) => {
   return (
     <>
-      <div className="lg:max-h-[250px] mt-6">
+      <div className="lg:max-h-[250px] mt-6 ">
         <div id="searchParams" className={fromList && "!shadow-none"}>
           <div>
             <span>Destination</span>

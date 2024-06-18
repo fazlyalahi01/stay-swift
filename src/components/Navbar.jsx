@@ -4,37 +4,33 @@ import Image from "next/image"
 
 const Navbar = () => {
   return (
-    <nav>
-    <Link href="/">
-      <Image 
-        src="/stayswift.svg" 
-        alt="Stay Swift Logo" 
-        width={200}
-        height={200} />
-    </Link>
+    <nav >
+      <Link href="/">
+        <p className="text-primary font-bold text-3xl capitalize">stay Swift</p>
+      </Link>
 
-    <ul>
-      <li>
-        <Link href="#">Recommended Places</Link>
-      </li>
+      <ul className="text-white">
+        <li>
+          <Link href="#">Recommended Places</Link>
+        </li>
 
-      <li>
-        <Link href="#">About Us</Link>
-      </li>
+        <li>
+          <Link href="#">About Us</Link>
+        </li>
 
-      <li>
-        <Link href="#">Contact us</Link>
-      </li>
+        <li>
+          <Link href="#">Contact us</Link>
+        </li>
 
-      <li>
-        <Link href="/bookings">Bookings</Link>
-      </li>
+        <li>
+          <Link href="/bookings">Bookings</Link>
+        </li>
 
-      <li>
-        <Link href="/login" class="login bg-primary">Login</Link>
-      </li>
-    </ul>
-  </nav>
+        <li>
+          <Link href="/login" class="login bg-primary">Login</Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 
